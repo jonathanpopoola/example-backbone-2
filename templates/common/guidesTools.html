@@ -1,0 +1,173 @@
+
+<div class="tab">
+	<input type="radio" id="tab-1" name="tab-group-1" checked> <label
+		for="tab-1">Tools</label>
+
+	<div class="content">
+		<div id="findBranch" class="tools-icons">
+			<div class="tools1"></div>
+			<p>Branch Finder</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools2"></div>
+			<p>Product Comparison</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools3"></div>
+			<p>Current Account Finder</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools4"></div>
+			<p>Financial Checkup</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools5"></div>
+			<p>Budget Calculator</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools6"></div>
+			<p>Saving Goals</p>
+		</div>
+		<div id="brandFinder" class="toolsGuides">
+			<div id="searchForBranches">
+				<h3>Branch Locator</h3>
+				<p>Find your nearest NatWest branch or cash machine</p>
+				<form>
+					<div>
+						<div class="locationFinder"></div>
+						<input type="text" placeholder="Postcode, town/city" />
+						<button>Search &#187;</button>
+					</div>
+					<i>e.g. SW12, Manchester or Tower of London</i>
+				</form>
+			</div>
+			<div id="branchList">
+				<div class="branchListEl">
+					<img src="images/marker_branch1.png" alt="branch marker" />
+					<p>Cavendish Sq</p>
+					<b>0.12 miles</b> </br>
+					<a href="#">View branch details &#187;</a>
+				</div>
+				<div class="branchListEl">
+					<img src="images/marker_branch2.png" alt="branch marker" />
+					<p>Regent St</p>
+					<b>26 miles</b></br>
+					<a href="#">View branch details &#187;</a>
+				</div>
+				<div class="branchListEl">
+					<img src="images/marker_branch3.png" alt="branch marker" />
+					<p>Portman Sq</p>
+					<b>0.37 miles</b></br>
+					<a href="#">View branch details &#187;</a>
+				</div>
+				<div class="branchListEl">
+					<img src="images/marker_branch4.png" alt="branch marker" />
+					<p>Baker St</p>
+					<b>0.49 miles</b> </br>
+					<a href="#">View branch details &#187;</a>
+				</div>
+			</div>
+			<div id="mapholder"></div>
+			<a class="closeGuides" href="#"><img src="images/closeIcon.png"
+				alt="close icon" /></a>
+		</div>
+
+	</div>
+</div>
+
+<div class="tab">
+	<input type="radio" id="tab-2" name="tab-group-1"> <label
+		for="tab-2">Guides</label>
+
+	<div class="content">
+		<div class="tools-icons">
+			<div class="tools1"></div>
+			<p>Savings Finder</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools2"></div>
+			<p>Savings Goals</p>
+		</div>
+		<div id="isaGuideReveal" class="tools-icons">
+			<div class="tools3"></div>
+			<p>ISA Guide</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools4"></div>
+			<p>Financial Check Up</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools5"></div>
+			<p>Budget Calculator</p>
+		</div>
+		<div class="tools-icons">
+			<div class="tools6"></div>
+			<p>Saving Goals</p>
+		</div>
+		<div id="isaGuide" class="toolsGuides">
+			<div class="newHeader"><h5>ISA Guide</h5><a class="textClose" href="#">Close (X)</a></div>
+			
+			 
+			      
+			<div class="mortgageOption">
+				<a href="#">&#187; What is an ISA and who can have one?</a>
+			</div>
+			<div class="mortgageOption">
+				<a href="#">&#187; How much can I put into an ISA?</a>
+			</div>
+			<div class="mortgageOption">
+				<a href="#">&#187; Making withdrawals?</a>
+			</div>
+			<div class="mortgageOption">
+				<a href="#">&#187; Choosing an ISA?</a>
+			</div>
+			<div class="mortgageOption">
+				<a href="#">&#187; What happens in the future to my ISA?</a>
+			</div>
+			<div class="mortgageOption">
+				<a href="#">&#187; What to do next?</a>
+			</div>
+		</div> 
+	</div>
+</div>
+
+<script>
+	// change to event lisner pattern 
+	
+	$("#isaGuideReveal").bind(
+			"click",
+			function() {
+				var elHeight = $(this).height();
+				var cHeight = $("#guidesHolder").height();
+				$(".tools-icons").hide();
+				$("#isaGuide").show();
+				$("#guidesHolder").height("430px");
+
+			});
+	
+	$("#findBranch").bind(
+			"click",
+			function() {
+				var elHeight = $(this).height();
+				var cHeight = $("#guidesHolder").height();
+				$(".tools-icons").hide();
+				$("#brandFinder").show();
+				$("#guidesHolder").height("430px");
+
+			});
+
+	$("#guidesHolder").bind("mouseleave", function() {
+		//aswewere() ;
+	});
+
+	$(".closeGuides, .textClose").bind("click", function() {
+		aswewere();
+		return false;
+	});
+
+	function aswewere() {
+		$("#guidesHolder").height("130px");
+		$(".tools-icons").show();
+		$(".toolsGuides").hide();
+	}
+</script>

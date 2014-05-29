@@ -1,0 +1,95 @@
+<div id="pgCurrentAccounts" class="tablet">
+	<div class="tablet">
+	<h2 class="accounts-h2">Open a Select Account</h2> 
+<div id="current-accounts-body">
+	<div class="curr-acc-padd">
+	<p>
+			<img class="pad" src="images/padlock.gif" alt="secure applicaiton" />Secure
+			Application
+		</p>
+		
+		<div class="wizardInfoBox">
+			<b>How long will it take ?</b>
+			<p>
+				Apply online and your account could be open in <b>less than 10
+					minutes.</b>
+			</p>
+		</div>
+		<p>If you are an existing NatWest customer you can apply even
+			faster if you know a few details.</p>
+		<form>
+			<select id="existingCutomer">
+				<option value="default">Do we have your details already ?</option>
+				<option value="no">No, I'm a new customer</option>
+				<option value="yes">Yes, I'm a NatWest customer</option>
+			</select>
+			
+		</form>
+		<div id="newCustomerinfo">
+				<p>To start your application, we need some information that helps us to confirm your identity. </p>
+				<p>We can usually confirm your identity online and open your new account instantly. This means you won't need to visit a branch or post any documents to us.</p>
+				<p>To do this, we need information from <b>a current debit or credit card</b> AND <b>one</b> of these three things:
+				<ul>
+					<li>UK driving licence (we can't accept licences registered to addresses in Northern Ireland, Jersey, the Isle of Man or Gibraltar)</li>
+					<li>OR passport</li>
+					<li>OR EU identity card</li>
+				</ul>
+				<p>Get your card and documents ready now to save time.</p>
+			</div>
+		
+		<div class="apply_buttons clearContent">
+			<input type="button" value="Proceed" class="apply_button" /> <a id="cancelLink"
+				href="#/accountsView">Cancel Application &#171;</a>
+		</div>
+		
+		<div class="clearContent largeHeight"></div>
+
+	</div>
+	</div>
+	
+	
+
+</div>
+	<!-- tabs : start-->
+	<div class="tablet">
+		<div class="tabs">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">Tools</label>
+       
+       <div class="content">
+           <div class="tools-icons" id="findBranch"><div class="tools1"></div><p>Branch Finder</p></div>
+		   <div class="tools-icons"><div class="tools2"></div><p>Product Comparison</p></div>
+		   <div class="tools-icons"><div class="tools3"></div><p>Current Account Finder</p></div>
+		   <div class="tools-icons"><div class="tools4"></div><p>Financial Checkup</p></div>
+		   <div class="tools-icons"><div class="tools5"></div><p>Budget Calculator</p></div>
+		   <div class="tools-icons"><div class="tools6"></div><p>Saving Goals</p></div>
+		   <div class="subContent"><h1>sub content</h1></div>
+       </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Guides</label>
+       
+       <div class="content">
+       </div> 
+   </div>  
+</div>
+</div>
+		<!-- tabs : end -->
+</div>
+<script>
+	$('#existingCutomer').bind("change", function() {
+		var c = $(this).val();
+		var d = $('#newCustomerinfo');
+		if(c == "no") {
+			d.fadeIn();
+		}else {
+			d.fadeOut();
+			}
+	});
+	
+</script>
+

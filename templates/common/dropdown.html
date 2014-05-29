@@ -1,0 +1,76 @@
+
+<ul id='rightMenu'>
+	<li class='visible-phone hidden-tv'><div class='login-icon'></div><a href='#/signIn'>Sign in</a></li>
+	<li class='hidden-phone hidden-tv'><div class='login-icon'></div><span onclick='toggleContent()'>Sign in</span></li>
+	<li class='hidden-tv'><div class='video-call-icon'></div>Video Call Product Support</li>
+	<li class='hidden-tv'><div class='voice-call-icon'></div>Voice Call Product Support</li>
+	<li><div class='video-call-icon'></div>Web chat</li>
+	<li class='hidden-phone'><div class='tc-icon'></div>T&C</li>
+	<li class='hidden-phone'><div class='voice-call-icon'></div>Privacy Policy</li>
+	<li class='hidden-phone'><div class='sm-icon'></div>Social Media</li>
+
+</ul>
+<div id='dropdown'>
+<ul id='fakeLogin'>
+	<li>
+<div id='pglogIn' style='display:none!important;'>
+	<div class='si-wrapper tablet'>
+		<div class='login-head'>Log in</div>
+		<div class='si-form-wrapper'>
+			<p>Customer Number</p>
+			<input type='text' value='' class='sign-in-input'/>
+			<div class='si-float-left'><a>Find out more and<br> register for online<br> booking</a>
+			<span class='apply_button' onclick='toggleSignIn()'>Log in</span></div>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+	
+
+<div id='pgSignIn' style='display:none!important;'>
+	<div class='si-wrapper'>
+		<div class='login-head'>Sign in</div>
+		<div class='si-form-wrapper'>
+			<p>Customer Number</p>
+			<input type='text' value='' class='sign-in-input'/>
+			<p>Your PIN</p>
+			<span class='form-span'>Enter the following number from your PIN</span>
+			<div class='si-float-right'>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<span class='form-span'>1st, 2nd &amp; 4th</span>
+			</div>
+			<p>Your password</p>
+			<span class='form-span'>Enter the following number from your Password</span>
+			<div class='si-float-right'>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<input type='text' value='' class='si-input-numbers' maxlength='1'/>
+				<span class='form-span'>2nd, 3rd &amp; 9th</span>
+			</div>
+			<span class='form-span'>Forgot your PIN or Password</span>
+			<div class='si-float-left'>
+			<a href='#' id='signInBtn' class='apply_button'>Sign in</a></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<script>
+	function toggleContent(){
+		$('#rightMenu li').hide();
+		$('.popover').css('width', '250px');
+		$('#pglogIn .si-form-wrapper').css('min-height', '0px');
+		$('#pglogIn').show();	
+	}
+	
+	function toggleSignIn(){
+		$('#fakeLogin li').hide();
+		$('#pgSignIn').show();
+		$('.form-span').css('margin-left', '0');	
+		$('#pgSignIn .si-form-wrapper').css('min-height', '360px');
+	}
+</script>

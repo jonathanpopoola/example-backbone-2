@@ -1,0 +1,36 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container tvContainer">
+			<div>
+				<ul class="nav">
+					<li>
+						<button type="button" id="sideMenuButton"
+							class="btn btn-navbar visible-phone hidden-ipad">
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span>
+						</button>
+						<button type="button" id="sideMenuiPadButton"
+							class="btn btn-navbar hidden-phone visible-ipad">
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span>
+						</button>
+					</li>
+					<li style="padding-top: 5px;"><a href="#/" id="logo" class="eb-mobile-sprite logo hidden-tv">&nbsp;</a></li>
+					<li><p class="header-heading hidden-phone hidden-tv">Helpful Banking</p></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li class="menu-home visible-phone"></li>
+					<li class="menu-home-tablet hidden-phone"><a href="#/" class="menu-home-tablet-link">&nbsp;</a></li>
+					<li class="tvSearch"><input type="search" value="" placeholder="Search" class="sideMenu-search hidden-phone"></li>
+					<li class="menu-search visible-phone"></li>
+					<li class="menu-home hidden-phone"></li>
+					<li class="menu-menu">
+						<a data-content="<%=dropdownContent%>" data-placement="bottom" data-html="true" id="helpPopover" rel="popover">&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

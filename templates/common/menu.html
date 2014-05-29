@@ -1,0 +1,410 @@
+<!-- Add data-parent="sideMenu" to have all other collapse when clicking top level -->
+
+<!-- TODO Maybe use margin-left instead of width to see if it makes it more flunet -->
+
+
+<div class="accordion" id="sideMenu">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle main-toggle collapsed" data-toggle="collapse" data-parent="#sideMenu" data-target="#collapsePrivateBanking">
+				<i class="pb"></i>
+				Personal banking
+				<i class="expand-icon eb-mobile-sprite menu_arrow"></i>
+			</a>
+		</div>
+		<div id="collapsePrivateBanking" class="accordion-body collapse">
+			<div class="accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-parent="#collapsePrivateBanking" data-target="#collapseCurrentAccounts">
+							<i class="curr-acc"></i> 
+							Current Accounts
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<div id="collapseCurrentAccounts" class="accordion-body collapse">
+						<div class="accordion-inner page-link">
+							<a href="#/accounts">Select Account</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/silverView">Select Silver Account</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/accounts">Select Platinum Account</a>
+						</div>
+					</div>
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseSavings">
+							<i class="pb-sav"></i>
+							Savings
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<div id="collapseSavings" class="accordion-body collapse">
+						<div class="accordion-inner page-link">
+							<a href="#/savingView">e-Savings</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/isaView">e-ISA</a>
+						</div>
+						
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading page-link borderOverride">
+						<a id="manualClose" class="inner-toggle"  href="#/investView"> 
+							<i class="pb-inv"></i>
+							Investments
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseLoans">
+							<i class="pb-loa"></i>
+							Loans
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCreditCards">
+							<i class="pb-cc"></i>
+							Credit Cards
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+	
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseMortgages">
+							<i class="pb-mor"></i>
+							Mortgages
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<div id="collapseMortgages" class="accordion-body collapse">
+						<div class="accordion-inner page-link">
+							<a href="#/haveMortgageView">I have a NatWest Mortgage</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/noMortgageView">I do not have a NatWest Mortgage</a>
+						</div>
+						
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-ins"></i>
+							Insurance
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<div id="collapseInsurance" class="accordion-body collapse">
+						<div class="accordion-inner page-link">
+							<a href="#/carInsur">Car Insurance</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/homeInsurView">Home Insurance</a>
+						</div>
+						<div class="accordion-inner page-link">
+							<a href="#/isaView">Life Insurance</a>
+						</div>
+						
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-tin"></i>
+							Travel &amp; International
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle main-toggle collapsed" data-toggle="collapse" data-parent="#sideMenu" data-target="#collapseTwo">
+				<i class="prb"></i>
+				Private banking
+				<i class="expand-icon eb-mobile-sprite menu_arrow"></i>
+			</a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse">
+			<div class="accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<!--inner accordion : start-->
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCurrentAccounts">
+							<i class="curr-acc"></i>
+							Current Accounts
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseSavings">
+							<i class="pb-sav"></i>
+							Saving Accounts
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInvestments">
+							<i class="pb-inv"></i>
+							Credit Cards
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseLoans">
+							<i class="pb-loa"></i>
+							Mortgages
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCreditCards">
+							<i class="pb-cc"></i>
+							Loans
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+	
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseMortgages">
+							<i class="pb-mor"></i>
+							Insurance 
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-ins"></i>
+							Investment Services
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-tin"></i>
+							Customer Benefits 
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle main-toggle collapsed" data-toggle="collapse" data-parent="#sideMenu" data-target="#collapseThree">
+				<i class="bb"></i>
+				Business banking
+				<i class="expand-icon eb-mobile-sprite menu_arrow"></i>
+			</a>
+		</div>
+		<div id="collapseThree" class="accordion-body collapse">
+			<div class="accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<!--inner accordion : start-->
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCurrentAccounts">
+							<i class="curr-acc"></i>
+							Business current accounts
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseSavings">
+							<i class="pb-sav"></i>
+							Savings and investments 
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInvestments">
+							<i class="pb-inv"></i>
+							Credit cards and payments
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseLoans">
+							<i class="pb-loa"></i>
+							Borrowing and financing
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCreditCards">
+							<i class="pb-mor"></i>
+							Insurance
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+	
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseMortgages">
+							<i class="pb-cc"></i>
+							Internet and telephone banking
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-ins"></i>
+							Sector and local expertise 
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle main-toggle collapsed" data-toggle="collapse"  data-parent="#sideMenu" data-target="#collapseFour">
+			<i class="cb"></i>
+				Commercial banking
+				<i class="expand-icon eb-mobile-sprite menu_arrow"></i>
+			</a>
+		</div>
+		<div id="collapseFour" class="accordion-body collapse">
+			<div class="accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<!--inner accordion : start-->
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCurrentAccounts">
+							<i class="curr-acc"></i>
+							Banking with NatWest
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseSavings">
+							<i class="pb-sav"></i>
+							Finance  
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInvestments">
+							<i class="pb-inv"></i>
+							Planning and Advice
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseLoans">
+							<i class="pb-loa"></i>
+							Deposits and Investments
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+						<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseCreditCards">
+							<i class="pb-mor"></i>
+							International
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+	
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseMortgages">
+							<i class="pb-cc"></i>
+							Payments
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+					
+					<!--inner accordion : start-->
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed inner-toggle" data-toggle="collapse" data-target="#collapseInsurance">
+							<i class="pb-ins"></i>
+							Online Services 
+							<i class="expand-icon eb-mobile-sprite submenu_arrow"></i>
+						</a>
+					</div>
+					<!--inner accordion : end -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
